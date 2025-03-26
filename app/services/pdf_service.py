@@ -31,7 +31,7 @@ def generate_pdf(request: DocumentRequest) -> str:
             return temp_path
         
     except Exception as e:
-        raise RuntimeError(f"PDF generation failed")
+        raise RuntimeError(f"PDF generation failed: ", str(e))
 
 def construct_html(request: DocumentRequest) -> str:
     """Constructs complete HTML document with proper structure."""

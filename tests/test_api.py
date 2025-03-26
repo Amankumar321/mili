@@ -51,7 +51,7 @@ def test_generate_pdf_full_features(cleanup_test_files):
         "watermark_opacity": 0.3,
         "footer_last_page_only": True
     })
-    print(response.text)
+
     assert response.status_code == 200
     output_path = "./temp/test_output_full.pdf"
     with open(output_path, "wb") as f:

@@ -33,7 +33,7 @@ def generate_docx(request: DocumentRequest) -> str:
             return temp_path
         
     except Exception as e:
-        raise RuntimeError(f"Error generating DOCX")
+        raise RuntimeError(f"Error generating DOCX: ", str(e))
 
 def add_watermark(doc: aw.Document, builder: aw.DocumentBuilder, request: DocumentRequest):
     """Adds HTML watermark as image with proper positioning."""
