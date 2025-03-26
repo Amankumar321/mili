@@ -1,5 +1,6 @@
 __pycache__/
 temp/*
 .venv/
+venv/
 .DS_Store
 .pytest_cache/

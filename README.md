@@ -40,17 +40,17 @@ A FastAPI backend service that generates PDF and DOCX documents from HTML input 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/document-generation-service.git
-cd document-generation-service
+git clone https://github.com/Amankumar/mili.git
+cd mili
 ```
 
 2. Create and activate virtual environment:
 ```bash
-python -m venv venv
+python -m venv .venv
 # On Windows:
 venv\Scripts\activate
 # On Mac/Linux:
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 3. Install dependencies:
@@ -68,7 +68,7 @@ Access interactive docs at: http://localhost:8000/docs
 
 Generate Document
 
-Endpoint: POST /api/v1/generate-document
+Endpoint: POST `/api/v1/generate-document`
 
 Request Body Example:
 
@@ -105,19 +105,6 @@ Test coverage includes:
 - Watermark functionality
 - Footer placement logic
 - Error handling
-
-### Project Structure
-
-mili/
-├── app/
-│   ├── api/               # API endpoints
-│   ├── models/            # Pydantic models
-│   ├── services/          # PDF/DOCX generators
-│   ├── utils/             # Helper functions
-│   └── main.py            # FastAPI app setup
-├── tests/                 # Test cases
-├── requirements.txt       # Dependencies
-└── README.md              # This file
 
 ### Example Requests
 
