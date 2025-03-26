@@ -68,7 +68,7 @@ Access interactive docs at: http://localhost:8000/docs
 
 Generate Document
 
-Endpoint: POST `/api/v1/generate-document`
+Endpoint: POST `/generate-document`
 
 Request Body Example:
 
