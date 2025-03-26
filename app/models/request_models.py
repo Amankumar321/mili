@@ -71,7 +71,7 @@ class DocumentRequest(BaseModel):
             "example": {
                 "content_html": "<h1>Annual Report</h1><p>Financial results for Q4 2023</p><p>Revenue: $1.2M</p>",
                 "header_html": "<div style='text-align: center; border-bottom: 1px solid #ccc; padding: 10px;'>ACME Corporation</div>",
-                "footer_html": "<div style='font-size: 10pt; color: #666;'>Page {page_number} | Confidential</div>",
+                "footer_html": "<div style='font-size: 10pt; color: #666;'>Page 1 | Confidential</div>",
                 "document_type": "pdf",
                 "watermark_html": "<div style='color: rgba(150,150,150,1); font-size: 150px; text-align: center;'>DRAFT</div>",
                 "watermark_width": 800,
