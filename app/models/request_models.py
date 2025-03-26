@@ -69,15 +69,16 @@ class DocumentRequest(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "content_html": "<h1>Document Title</h1><p>This is the main content</p>",
-                "header_html": "<div style='text-align: center;'>Company Header</div>",
-                "footer_html": "<div style='font-size: 10pt;'>Page {page_number}</div>",
+                "content_html": "<h1>Annual Report</h1><p>Financial results for Q4 2023</p><p>Revenue: $1.2M</p>",
+                "header_html": "<div style='text-align: center; border-bottom: 1px solid #ccc; padding: 10px;'>ACME Corporation</div>",
+                "footer_html": "<div style='font-size: 10pt; color: #666;'>Page {page_number} | Confidential</div>",
                 "document_type": "pdf",
-                "watermark_html": "<div style='color: rgba(128,128,128,0.5); font-size: 48px;'>DRAFT</div>",
-                "watermark_width": 300,
-                "watermark_height": 150,
-                "watermark_rotation": -45,
-                "watermark_opacity": 0.3,
+                "watermark_html": "<div style='color: rgba(150,150,150,1); font-size: 150px; text-align: center;'>DRAFT</div>",
+                "watermark_width": 800,
+                "watermark_height": 200,
+                "watermark_rotation": 45,
+                "watermark_opacity": 0.5,
                 "footer_last_page_only": False
             }
+
         }
