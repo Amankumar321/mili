@@ -1,12 +1,8 @@
  # Document Generation Service
 
-![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.95.2-green.svg)
-![License](https://img.shields.io/badge/license-MIT-orange.svg)
-
 A FastAPI backend service that generates PDF and DOCX documents from HTML input with support for headers, footers, and watermarks.
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 - Generate PDF documents from HTML content
@@ -26,7 +22,7 @@ A FastAPI backend service that generates PDF and DOCX documents from HTML input 
   - Document type verification
   - Parameter range checks
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: FastAPI
 - **PDF Generation**: pdfkit + PyMuPDF
@@ -34,7 +30,7 @@ A FastAPI backend service that generates PDF and DOCX documents from HTML input 
 - **HTML Processing**: BeautifulSoup
 - **Testing**: pytest
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9+
