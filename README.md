@@ -76,6 +76,7 @@ npm install
 
 7. Running the server:
 ```bash
+npm run build
 npm run start
 ```
 
