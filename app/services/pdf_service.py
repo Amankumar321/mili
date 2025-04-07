@@ -41,11 +41,13 @@ def construct_html(request: DocumentRequest) -> str:
         <style>
             @page {{ margin: 50px; }}
             body {{ font-family: Arial, sans-serif; }}
-            {request.header_html or ""}
         </style>
     </head>
     <body>
-        {request.content_html}
+        <div style='width: 100%; height: 100%'>
+          {request.header_html or ""}
+          {request.content_html}
+        </div>
     </body>
 </html>"""
 
@@ -112,7 +114,7 @@ def handle_pdf_footer(pdf_path: str, request: DocumentRequest):
             rect = page.rect
             footer_rect = fitz.Rect(
                 rect.x0 + 10,
-                rect.y1 - 40,
+                rect.y1 - 50,
                 rect.x1 - 10,
                 rect.y1 - 5
             )
