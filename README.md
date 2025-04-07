@@ -26,7 +26,7 @@ A FastAPI backend service that generates PDF and DOCX documents from HTML input 
 
 - **Framework**: FastAPI
 - **PDF Generation**: pdfkit + PyMuPDF
-- **DOCX Generation**: Aspose.Words
+- **DOCX Generation**: Aspose.Words / html-to-docx
 - **HTML Processing**: BeautifulSoup
 - **Testing**: pytest
 
@@ -64,11 +64,28 @@ uvicorn app.main:app --reload
 ```
 Access interactive docs at: http://localhost:8000/docs
 
+5. For node version of html to docx (uses open source library):
+```bash
+cd html-to-docx-server
+```
+
+6. Install dependencies:
+```bash
+npm install
+```
+
+7. Running the server:
+```bash
+npm run start
+```
+
 ##  API Documentation
 
 Generate Document
 
 Endpoint: POST `/generate-document`
+
+Endpoint for Node application: POST `/generate-docx`
 
 Request Body Example:
 
